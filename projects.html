@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Joshua Lauren T. Villaruel</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Dark/Stark Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#181818', // Near black
+                        'dark-card': '#262626', // Darker gray for contrast
+                        'neutral-text': '#D4D4D4', // Off-white for readability
+                        'accent-line': '#FFFFFF', // Stark white for lines/borders
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Load External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Load Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Ensures the whole background is dark */
+        body {
+            background-color: #181818; 
+            color: #D4D4D4;
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-neutral-text">
+
+    <!-- 1. Fixed Header (Dark Theme) -->
+    <header class="fixed top-0 left-0 w-full bg-dark-bg bg-opacity-90 backdrop-blur-sm shadow-lg shadow-gray-900 z-50 flex items-center px-[2%] border-b border-gray-700/50">
+        <div class="flex items-center space-x-3 py-3">
+            <!-- Placeholder for CIIT College Logo (40x40) -->
+            <img src="https://placehold.co/40x40/4B5563/FFFFFF?text=CIIT" alt="CIIT Logo" class="rounded-lg shadow-sm">
+            <div class="brand font-extrabold text-lg text-white uppercase tracking-wider">
+                CIIT College of Arts and Technology
+            </div>
+        </div>
+        
+        <!-- Nav Links: Extended 7-item navigation -->
+        <nav class="hidden lg:flex flex-1 justify-center">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">HOME</a></li>
+                <li><a href="biography.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">BIO</a></li>
+                <li><a href="interests.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">INTERESTS</a></li>
+                <li><a href="hobbies.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">HOBBIES</a></li>
+                <li><a href="goals.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">GOALS</a></li>
+                <!-- Active Link Style Change -->
+                <li><a href="projects.html" class="nav-link text-white p-2 border-b-2 border-accent-line font-extrabold uppercase">PROJECTS</a></li>
+                <li><a href="contact.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu Icon (Visible on small screens) -->
+        <div class="lg:hidden text-2xl text-white ml-auto">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container max-w-[92%] mx-auto px-[4%] pt-[12vh] pb-[6vh]">
+        
+        <h1 class="text-6xl font-extrabold text-white mb-16 border-b border-accent-line/50 pb-4 uppercase tracking-widest">
+            PROJECT PORTFOLIO
+        </h1>
+
+        <!-- Projects Section Container -->
+        <section id="projects" class="mb-12 p-8 bg-dark-card rounded-xl shadow-2xl shadow-gray-950/70 border border-gray-700/50 space-y-10">
+            <p class="text-xl font-light italic text-center border-b border-gray-700 pb-4 mb-6">
+                A showcase of systems, concepts, and technical documentation illustrating strong creative and logical thinking.
+            </p>
+
+            <!-- Project Card 1: CARDINAV -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 bg-gray-700/30 rounded-lg border-l-4 border-white">
+                <div class="lg:col-span-2 space-y-3">
+                    <h3 class="text-3xl font-extrabold text-white uppercase tracking-wide">1. CARDINAV: The Cardinal Navigator</h3>
+                    <p class="text-base text-gray-400 italic font-semibold">Role: Conceptualization, Technical Documentation, Stakeholder Pitching</p>
+                    <p class="text-neutral-text text-lg">
+                        CARDINAV is a **navigation system** designed to provide **accurate and reliable directional guidance**. It integrates user-friendly interfaces and strategic planning features to help users navigate efficiently, whether in real-world spaces or digital simulations. The core focus was on robust technical documentation and a compelling pitch script to present the system to stakeholders.
+                    </p>
+                    <a href="#" class="inline-block mt-2 text-white font-semibold underline hover:text-gray-400 transition">View Documentation (Link Placeholder) <i class="fas fa-file-alt ml-1"></i></a>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="https://placehold.co/300x200/4B5563/FFFFFF?text=CARDINAV%20UI" alt="CARDINAV UI Mockup" class="rounded-lg border border-gray-600/50">
+                </div>
+            </div>
+
+            <!-- Project Card 2: Applesauce -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 bg-gray-700/30 rounded-lg border-l-4 border-white">
+                <div class="flex items-center justify-center order-2 lg:order-1">
+                    <img src="https://placehold.co/300x200/4B5563/FFFFFF?text=APPLES%20MODULAR" alt="Applesauce Modular Interface" class="rounded-lg border border-gray-600/50">
+                </div>
+                <div class="lg:col-span-2 space-y-3 order-1 lg:order-2">
+                    <h3 class="text-3xl font-extrabold text-white uppercase tracking-wide">2. Applesauce: Modular Productivity Tool</h3>
+                    <p class="text-base text-gray-400 italic font-semibold">Role: Concept Design, UI/UX Prototyping, Usability Focus</p>
+                    <p class="text-neutral-text text-lg">
+                        Applesauce is a desktop productivity tool that allows users to manage notes, to-dos, and calendars in a single **modular interface**. My contribution focused on **customization and efficiency**, ensuring the design helps users organize tasks and information quickly, supporting superior workflow management.
+                    </p>
+                    <a href="#" class="inline-block mt-2 text-white font-semibold underline hover:text-gray-400 transition">View Prototype (Link Placeholder) <i class="fas fa-desktop ml-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Project Card 3: Weather Risk Management System -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 bg-gray-700/30 rounded-lg border-l-4 border-white">
+                <div class="lg:col-span-2 space-y-3">
+                    <h3 class="text-3xl font-extrabold text-white uppercase tracking-wide">3. Automatic Weather Risk Management System</h3>
+                    <p class="text-base text-gray-400 italic font-semibold">Role: Research, System Design, Documentation</p>
+                    <p class="text-neutral-text text-lg">
+                        This system monitors and analyzes weather data to identify potential risks, helping users or organizations take **preventive action**. It aims to mitigate the effects of adverse weather events by providing timely alerts and recommendations for **risk management** based on system analysis.
+                    </p>
+                    <a href="#" class="inline-block mt-2 text-white font-semibold underline hover:text-gray-400 transition">View Case Study (Link Placeholder) <i class="fas fa-cloud-showers-heavy ml-1"></i></a>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="https://placehold.co/300x200/4B5563/FFFFFF?text=WEATHER%20ANALYSIS" alt="Weather Analysis Diagram" class="rounded-lg border border-gray-600/50">
+                </div>
+            </div>
+
+            <!-- Project Card 4: SafeSplit -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 bg-gray-700/30 rounded-lg border-l-4 border-white">
+                <div class="flex items-center justify-center order-2 lg:order-1">
+                    <img src="https://placehold.co/300x200/4B5563/FFFFFF?text=SAFESPLIT%20ALLOCATION" alt="SafeSplit Allocation" class="rounded-lg border border-gray-600/50">
+                </div>
+                <div class="lg:col-span-2 space-y-3 order-1 lg:order-2">
+                    <h3 class="text-3xl font-extrabold text-white uppercase tracking-wide">4. SafeSplit at CIIT</h3>
+                    <p class="text-base text-gray-400 italic font-semibold">Role: Research, Conceptualization, Technical Documentation</p>
+                    <p class="text-neutral-text text-lg">
+                        SafeSplit is a secure and user-friendly system for **dividing resources or tasks**. It ensures **safety, transparency, and simplicity** in allocation processes, making it ideal for collaborative environments or resource-sharing scenarios within the academic setting.
+                    </p>
+                    <a href="#" class="inline-block mt-2 text-white font-semibold underline hover:text-gray-400 transition">View Proposal (Link Placeholder) <i class="fas fa-handshake ml-1"></i></a>
+                </div>
+            </div>
+            
+            <!-- Separator -->
+            <div class="border-t border-gray-700/50 pt-10"></div>
+
+            <!-- Credentials Section -->
+            <div class="text-center p-6 bg-gray-900/50 border border-white/20 rounded-lg shadow-inner shadow-black/50">
+                <h3 class="text-4xl font-extrabold text-white uppercase tracking-widest mb-3 flex items-center justify-center">
+                    <i class="fas fa-trophy text-yellow-400 mr-4"></i> KEY CREDENTIAL
+                </h3>
+                <p class="text-xl font-bold text-yellow-300">
+                    Best Research Project Award
+                </p>
+                <p class="text-lg text-neutral-text italic mt-1">
+                    Earned during my Senior High School years, recognizing excellence in research, analytical thinking, and presentation skills.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div class="mt-16 text-center flex justify-center space-x-8">
+            <a href="goals.html" class="inline-block px-8 py-3 border border-white text-white font-semibold rounded-lg hover:bg-gray-700 transition uppercase tracking-widest">
+                <i class="fas fa-arrow-left mr-3"></i> PREVIOUS: GOALS
+            </a>
+            <a href="contact.html" class="inline-block px-8 py-3 bg-white text-dark-bg font-extrabold rounded-lg hover:bg-gray-200 transition uppercase tracking-widest">
+                NEXT: GET IN TOUCH <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+
+    </main>
+
+</body>
+</html>
