@@ -31,15 +31,19 @@
             background-color: #181818; 
             color: #D4D4D4;
         }
+        .logo-fixed-size {
+            width: 40px;
+            height: 40px;
+        }
     </style>
 </head>
 <body class="bg-dark-bg text-neutral-text">
 
-    <!-- 1. Fixed Header (Updated for Dark Theme) -->
+    <!-- 1. Fixed Header (Dark Theme) -->
     <header class="fixed top-0 left-0 w-full bg-dark-bg bg-opacity-90 backdrop-blur-sm shadow-lg shadow-gray-900 z-50 flex items-center px-[2%] border-b border-gray-700/50">
         <div class="flex items-center space-x-3 py-3">
             <!-- Placeholder for CIIT College Logo (40x40) -->
-            <img src="images/ciitlogo.png" alt="CIIT Logo" class="rounded-lg shadow-sm">
+            <img src="images/ciitlogo.png" class="rounded-lg shadow-sm logo-fixed-size">
             <div class="brand font-extrabold text-lg text-white uppercase tracking-wider">
                 CIIT College of Arts and Technology
             </div>
@@ -72,108 +76,70 @@
             MY HOBBIES
         </h1>
 
-        <!-- Hobbies Section (Monochromatic, Layered Style) -->
-        <section id="hobbies-content" class="p-8 bg-dark-card rounded-xl shadow-2xl shadow-gray-950/70 border border-gray-700/50 space-y-12">
+        <!-- Hobbies Section -->
+        <section id="hobbies-sections" class="mb-12 p-8 bg-dark-card rounded-xl shadow-2xl shadow-gray-950/70 border border-gray-700/50 space-y-16">
             
-            <p class="text-xl font-light italic text-center mb-10 border-b border-gray-700 pb-4">
-                I’ve always believed that hobbies are more than just ways to pass time — they are extensions of who we are, small pieces of identity that express our tastes, passions, and curiosities.
+            <h2 class="text-3xl font-black text-white uppercase tracking-wider border-l-4 border-accent-line pl-4 mb-10 flex items-center">
+                <i class="fas fa-archive mr-3 text-gray-400"></i> Pursuits and Passions
+            </h2>
+            
+            <!-- Hobby Section 1: Archive Aesthetic Identity -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-6 bg-gray-700/30 rounded-xl border-l-4 border-white/50 shadow-inner">
+                <div class="lg:col-span-3 space-y-3">
+                    <h3 class="text-3xl font-bold text-white flex items-center mb-2"><i class="fas fa-layer-group mr-3"></i> Archive Aesthetic Identity</h3>
+                    <p class="text-lg text-neutral-text leading-relaxed">
+                        I am fascinated by **vintage digital interfaces, early web design, and media archiving**. This hobby involves curating digital collections, experimenting with retro operating systems (through emulation or virtual machines), and appreciating the history and evolution of computer graphics and user experience. It's about preserving and remixing the past in a modern context.
+                    </p>
+                </div>
+                <div class="lg:col-span-2 flex items-center justify-center">
+                    <!-- Image Placeholder (4:3 Aspect Ratio) -->
+                    <img 
+                        src="images/rickowensfashion.png" 
+                        alt="Placeholder for archive aesthetic" 
+                        class="w-full h-auto rounded-lg shadow-xl border border-gray-600"
+                    >
+                </div>
+            </div>
+
+            <!-- Hobby Section 2: Tinkering and Thrift Finds -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-6 bg-gray-700/30 rounded-xl border-l-4 border-white/50 shadow-inner">
+                <div class="lg:col-span-2 flex items-center justify-center order-2 lg:order-1">
+                    <!-- Image Placeholder (4:3 Aspect Ratio) -->
+                    <img 
+                        src="images/thriftandtinkering.png" 
+                        alt="Placeholder for tinkering" 
+                        class="w-full h-auto rounded-lg shadow-xl border border-gray-600"
+                    >
+                </div>
+                <div class="lg:col-span-3 space-y-3 order-1 lg:order-2">
+                    <h3 class="text-3xl font-bold text-white flex items-center mb-2"><i class="fas fa-wrench mr-3"></i> Tinkering & Thrift Finds</h3>
+                    <p class="text-lg text-neutral-text leading-relaxed">
+                        My practical side enjoys **repairing, modifying, and repurposing old electronics**. Finding functional hardware at thrift stores or flea markets provides a rewarding challenge. This hands-on activity involves circuit board diagnostics, soldering practice, and transforming discarded tech into usable, sometimes unconventional, devices.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Hobby Section 3: Space for Friends and Gaming -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-6 bg-gray-700/30 rounded-xl border-l-4 border-white/50 shadow-inner">
+                <div class="lg:col-span-3 space-y-3">
+                    <h3 class="text-3xl font-bold text-white flex items-center mb-2"><i class="fas fa-gamepad mr-3"></i> Space for Friends and Gaming</h3>
+                    <p class="text-lg text-neutral-text leading-relaxed">
+                        Gaming is always better with community. I dedicate time to **collaborative online gaming** with friends and maintaining digital spaces (like Discord servers) where we can connect, share ideas, and relax. This focus on multiplayer experiences reinforces teamwork, communication, and community building, skills I value highly in project work.
+                    </p>
+                </div>
+                <div class="lg:col-span-2 flex items-center justify-center">
+                    <!-- Image Placeholder (4:3 Aspect Ratio) -->
+                    <img 
+                        src="images/friendscollaborators.png" 
+                        alt="Placeholder for gaming" 
+                        class="w-full h-auto rounded-lg shadow-xl border border-gray-600"
+                    >
+                </div>
+            </div>
+
+            <p class="pt-6 text-center text-gray-500 italic border-t border-gray-700/50">
+                These interests drive my technical curiosity and provide a balanced perspective outside of formal studies.
             </p>
-
-            <!-- 1. Grid for Fashion/Aesthetic (Text Left, Image Right) -->
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
-                
-                <!-- Fashion Text Block (3/5 width) -->
-                <div class="lg:col-span-3 space-y-6">
-                    <h2 class="text-3xl font-black text-white uppercase tracking-wider border-l-4 border-accent-line pl-4 mb-4 flex items-center">
-                        <i class="fas fa-tshirt mr-3 text-gray-400"></i> Archive Aesthetic & Identity
-                    </h2>
-                    <p class="text-lg leading-relaxed">
-                        <strong class="font-extrabold text-white">Fashion holds a special place in my world.</strong> I’m drawn to the aesthetic of early 2000s to early 2010s — especially the mood and shape of archive fashion and pieces inspired by designers like <strong class="font-extrabold text-white">Rick Owens</strong>. I appreciate clothes not just as garments, but as statements, expressions of style, identity, and mood.
-                    </p>
-                    <p class="text-lg leading-relaxed">
-                        Scouring thrift shops, hunting for unique pieces, and imagining outfits that reflect my personal vibe — that’s where I find joy in fashion. Every shirt, jacket, or pair of shoes tells a story, and reworking or mixing those stories into something new appeals to me deeply.
-                    </p>
-                </div>
-
-                <!-- Placeholder Image (Right Side, 2/5 width) -->
-                <div class="lg:col-span-2 flex justify-center lg:justify-end">
-                    <div class="w-full h-80 bg-gray-700 border-2 border-white flex items-center justify-center rounded-lg shadow-xl hover:shadow-white/20 transition duration-300 transform hover:scale-[1.02] cursor-pointer">
-                        <span class="text-white text-xl font-bold uppercase tracking-widest text-center p-4">
-                            [IMAGE SPACE: ARCHIVE FASHION INSPO]
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Separator -->
-            <div class="border-t border-gray-700/50 pt-10"></div>
-            
-            <!-- 2. Grid for Tinkering/Thrifting (Image Left, Text Right) -->
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
-                
-                <!-- Placeholder Image (Left Side, 2/5 width) -->
-                <div class="lg:col-span-2 flex justify-center lg:justify-start">
-                    <div class="w-full h-80 bg-gray-700 border-2 border-white flex items-center justify-center rounded-lg shadow-xl hover:shadow-white/20 transition duration-300 transform hover:scale-[1.02] cursor-pointer">
-                        <span class="text-white text-xl font-bold uppercase tracking-widest text-center p-4">
-                            [IMAGE SPACE: TINKERING / THRIFT FINDS]
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Other Hobbies Text Block (3/5 width) -->
-                <div class="lg:col-span-3 space-y-6">
-                    <h2 class="text-3xl font-black text-white uppercase tracking-wider border-l-4 border-accent-line pl-4 mb-4 flex items-center">
-                        <i class="fas fa-puzzle-piece mr-3 text-gray-400"></i> Logic, Finds, and Building
-                    </h2>
-                    
-                    <!-- Tinkering -->
-                    <div class="bg-gray-700/50 p-4 rounded-md border-l-2 border-gray-500">
-                        <p class="font-bold text-white text-xl mb-1 flex items-center"><i class="fas fa-screwdriver-wrench mr-2"></i> Hands-On Tinkering</p>
-                        <p class="text-base">
-                            I enjoy hands-on tinkering. Whether I’m experimenting with scripts, automations, or small technical projects, there’s something satisfying about building — or fixing — things with my own hands (or my own code). Tinkering reminds me that I can create, improve, and play around with ideas until they work.
-                        </p>
-                    </div>
-
-                    <!-- Thrifting -->
-                    <div class="bg-gray-700/50 p-4 rounded-md border-l-2 border-gray-500">
-                         <p class="font-bold text-white text-xl mb-1 flex items-center"><i class="fas fa-tags mr-2"></i> The Thrill of Thrifting</p>
-                        <p class="text-base">
-                            Thrifting is another hobby I genuinely love. There’s a certain thrill in exploring second-hand stores, browsing through racks, and discovering pieces that have had lives of their own. It’s a mix of treasure hunting, nostalgia, and sustainability that appeals to me. It goes hand in hand with my fashion interest: reimagining older pieces, giving them new life, and making them part of my daily style.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Separator -->
-            <div class="border-t border-gray-700/50 pt-10"></div>
-            
-            <!-- 3. NEW Grid for Friends/Gaming (Text Left, Image Right) -->
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
-                
-                <!-- Friends Text Block (3/5 width) -->
-                <div class="lg:col-span-3 space-y-6">
-                    <h2 class="text-3xl font-black text-white uppercase tracking-wider border-l-4 border-accent-line pl-4 mb-4 flex items-center">
-                        <i class="fas fa-users mr-3 text-gray-400"></i> Time with Friends & Gaming
-                    </h2>
-                    <p class="text-lg leading-relaxed">
-                        Lastly — and perhaps most importantly — <strong class="text-white">I value spending time with friends</strong>. Life gets busy, deadlines and work pile up, but nothing replaces the energy of hanging out, laughing, sharing stories, and just being in good company. Whether it’s a casual meet-up, a gaming session, or a spontaneous thrift run, time with friends grounds me, refreshes me, and reminds me why balance matters.
-                    </p>
-                    <p class="text-lg leading-relaxed">
-                        Gaming also remains part of who I am. It started as a pastime — a way to unwind, explore, and connect with friends — and though life’s responsibilities and workload sometimes pull me away, the urge never fully goes away. Gaming has taught me about challenge, strategy, cooperation, and immersion.
-                    </p>
-                </div>
-
-                <!-- Friends Placeholder Image (Right Side, 2/5 width) -->
-                <div class="lg:col-span-2 flex justify-center lg:justify-end">
-                    <div class="w-full h-80 bg-gray-700 border-2 border-white flex items-center justify-center rounded-lg shadow-xl hover:shadow-white/20 transition duration-300 transform hover:scale-[1.02] cursor-pointer">
-                        <span class="text-white text-xl font-bold uppercase tracking-widest text-center p-4">
-                            [IMAGE SPACE: FRIENDS & GOOD TIMES]
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-
         </section>
 
         <!-- Navigation Buttons -->
@@ -182,7 +148,7 @@
                 <i class="fas fa-arrow-left mr-3"></i> PREVIOUS: INTERESTS
             </a>
             <a href="goals.html" class="inline-block px-8 py-3 bg-white text-dark-bg font-extrabold rounded-lg hover:bg-gray-200 transition uppercase tracking-widest">
-                NEXT: CAREER GOALS <i class="fas fa-arrow-right ml-3"></i>
+                NEXT: FUTURE GOALS <i class="fas fa-arrow-right ml-3"></i>
             </a>
         </div>
 
