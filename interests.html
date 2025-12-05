@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interests - Joshua Lauren T. Villaruel</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Dark/Stark Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#181818', // Near black
+                        'dark-card': '#262626', // Darker gray for contrast
+                        'neutral-text': '#D4D4D4', // Off-white for readability
+                        'accent-line': '#FFFFFF', // Stark white for lines/borders
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Load External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Load Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Ensures the whole background is dark */
+        body {
+            background-color: #181818; 
+            color: #D4D4D4;
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-neutral-text">
+
+    <!-- 1. Fixed Header (Dark Theme) -->
+    <header class="fixed top-0 left-0 w-full bg-dark-bg bg-opacity-90 backdrop-blur-sm shadow-lg shadow-gray-900 z-50 flex items-center px-[2%] border-b border-gray-700/50">
+        <div class="flex items-center space-x-3 py-3">
+            <!-- Placeholder for CIIT College Logo (40x40) -->
+            <img src="https://placehold.co/40x40/4B5563/FFFFFF?text=CIIT" alt="CIIT Logo" class="rounded-lg shadow-sm">
+            <div class="brand font-extrabold text-lg text-white uppercase tracking-wider">
+                CIIT College of Arts and Technology
+            </div>
+        </div>
+        
+        <!-- Nav Links: Extended 7-item navigation -->
+        <nav class="hidden lg:flex flex-1 justify-center">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">HOME</a></li>
+                <li><a href="biography.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">BIO</a></li>
+                <!-- Active Link Style Change -->
+                <li><a href="interests.html" class="nav-link text-white p-2 border-b-2 border-accent-line font-extrabold uppercase">INTERESTS</a></li>
+                <li><a href="hobbies.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">HOBBIES</a></li>
+                <li><a href="goals.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">GOALS</a></li>
+                <li><a href="projects.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">PROJECTS</a></li>
+                <li><a href="contact.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu Icon (Visible on small screens) -->
+        <div class="lg:hidden text-2xl text-white ml-auto">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container max-w-[92%] mx-auto px-[4%] pt-[12vh] pb-[6vh]">
+        
+        <h1 class="text-6xl font-extrabold text-white mb-16 border-b border-accent-line/50 pb-4 uppercase tracking-widest">
+            MY INTERESTS
+        </h1>
+
+        <!-- Interests Section: Rewritten Content -->
+        <section id="interests-rewritten" class="mb-12 p-8 bg-dark-card rounded-xl shadow-2xl shadow-gray-950/70 border border-gray-700/50 space-y-12">
+            
+            <h2 class="text-3xl font-black text-white uppercase tracking-wider border-l-4 border-accent-line pl-4 mb-6 flex items-center">
+                <i class="fas fa-cube mr-3 text-gray-400"></i> The Core of My Passion
+            </h2>
+            
+            <div class="text-neutral-text space-y-6 text-lg">
+                
+                <div class="p-6 bg-gray-700/30 rounded-lg border-l-4 border-white/50">
+                    <p class="font-extrabold text-xl text-white mb-2 flex items-center"><i class="fas fa-gamepad mr-2"></i> Gaming & Systems Thinking: From Counter-Strike to Redstone</p>
+                    <p>
+                        Gaming has always been a central part of my life, shaping not only how I spend my free time but also how I think and create. I enjoy a wide range of games, from strategic real-time battles to fast-paced FPS titles like Counter-Strike. These games challenge my decision-making, coordination, teamwork, and adaptability — skills that I carry into my work and daily life.
+                    </p>
+                    <p class="mt-4">
+                        But the game that influenced me the most is <strong class="font-extrabold text-white">Minecraft</strong>. What really changed everything for me was discovering <strong class="font-extrabold text-white">Minecraft Redstone</strong>. Learning how Redstone circuits worked — how signals move, how timing can be controlled, and how logic gates operate — was my first real exposure to systems thinking. Redstone was my entry point into building mechanisms, automating processes, and understanding how rules and logic can create something engaging. That experience is what led me toward game development. It showed me that behind every great game is a foundation of mechanics, systems, and ideas working together.
+                    </p>
+                </div>
+
+                <div>
+                    <p class="font-extrabold text-xl text-white mb-2 flex items-center"><i class="fas fa-cog mr-2"></i> Interactive System Design</p>
+                    <p>
+                        Because of this, I developed a deep love for designing interactive systems. I enjoy understanding why certain mechanics feel satisfying, how players respond to challenges, and how small design choices can completely change an experience. My studies at CIIT College of Arts and Technology continue to strengthen this perspective, giving me the tools to turn ideas into something real.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+                    <!-- Column 1: Technical & Logic -->
+                    <div class="space-y-6">
+                        <p class="font-extrabold text-xl text-white flex items-center"><i class="fas fa-laptop-code mr-2 text-white/70"></i> Technical Problem-Solving</p>
+                        <p class="text-base">
+                            I also have a strong interest in automation, scripting, and problem-solving. The same curiosity that Redstone sparked shows up in the way I create tools, build scripts, and design systems that make tasks easier or more efficient. I enjoy the process of figuring out how something works, breaking it down, and turning it into a working solution.
+                        </p>
+                        <p class="text-base">
+                            Math and logical thinking also play a significant role in my interests. I enjoy learning topics like trigonometry, algebra, and linear algebra because they give me a deeper understanding of how systems behave. These subjects strengthen my approach to both game mechanics and technical problem-solving.
+                        </p>
+                    </div>
+
+                    <!-- Column 2: Creative & Social -->
+                    <div class="space-y-6">
+                        <p class="font-extrabold text-xl text-white flex items-center"><i class="fas fa-bezier-curve mr-2 text-white/70"></i> Design & UI/UX</p>
+                        <p class="text-base">
+                            On the creative side, I’m drawn to UI and UX design, especially when it comes to crafting clean, organized interfaces. Projects like my productivity tool concept, <strong class="font-semibold">Applesauce</strong>, allow me to combine logic, design, and practicality in a way that feels both expressive and useful.
+                        </p>
+                        <p class="font-extrabold text-xl text-white flex items-center mt-4"><i class="fas fa-people-arrows mr-2 text-white/70"></i> Connection & Collaboration</p>
+                        <p class="text-base">
+                            Beyond games and development, I genuinely enjoy meeting people and interacting with them. I like hearing different perspectives, learning from conversations, and sharing ideas. Whether it’s through gaming, school projects, or creative collaborations, connecting with others is something I value. For me, the best experiences — whether in games or real life — come from the people you share them with.
+                        </p>
+                        <!-- Placeholder for friends picture -->
+                        <div class="mt-4 pt-4 border-t border-gray-600/50">
+                            <img 
+                                src="https://placehold.co/400x400/374151/FFFFFF?text=PLACEHOLDER%0A(FRIENDS%20PICTURE)" 
+                                alt="Placeholder for friends picture" 
+                                class="w-full h-auto rounded-lg shadow-xl"
+                            >
+                            <!-- Removed the caption text below -->
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="pt-6 text-center text-gray-500 italic border-t border-gray-700/50">
+                    Altogether, my interests form a blend of creativity, logic, curiosity, and connection. Gaming, Redstone, automation, design, math, and social interaction are all part of who I am and influence the kind of developer I’m becoming. Each experience, whether inside a game or in a classroom, contributes to my passion for building interactive digital worlds and creating meaningful experiences for others.
+                </p>
+            </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div class="mt-16 text-center flex justify-center space-x-8">
+            <a href="biography.html" class="inline-block px-8 py-3 border border-white text-white font-semibold rounded-lg hover:bg-gray-700 transition uppercase tracking-widest">
+                <i class="fas fa-arrow-left mr-3"></i> PREVIOUS: BIO
+            </a>
+            <a href="hobbies.html" class="inline-block px-8 py-3 bg-white text-dark-bg font-extrabold rounded-lg hover:bg-gray-200 transition uppercase tracking-widest">
+                NEXT: MY HOBBIES <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+
+    </main>
+
+</body>
+</html>
