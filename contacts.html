@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Joshua Lauren T. Villaruel</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Dark/Stark Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#181818', 
+                        'dark-card': '#262626', 
+                        'neutral-text': '#D4D4D4', 
+                        'accent-line': '#3b82f6', // Use the primary blue as accent
+                        'accent-color-1': '#3b82f6', 
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Load Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #181818; 
+            color: #D4D4D4;
+        }
+        /* Custom styles for input fields to match dark theme */
+        .form-input {
+            background-color: #3f3f46; /* Zinc-700 */
+            border: 1px solid #52525b; /* Zinc-600 */
+            color: #D4D4D4;
+            transition: all 0.2s;
+        }
+        .form-input:focus {
+            border-color: #3b82f6;
+            ring: 2px;
+            ring-color: #3b82f6;
+            outline: none;
+        }
+        .social-icon {
+            transition: transform 0.2s, color 0.2s;
+        }
+        /* Adjusted hover colors for new platforms */
+        .social-icon.github:hover { color: #ffffff; }
+        .social-icon.discord:hover { color: #5865F2; } /* Discord Purple */
+        .social-icon.steam:hover { color: #171a21; } /* Steam Blue/Grey */
+        .social-icon.instagram:hover { color: #E1306C; } /* Instagram Pink */
+    </style>
+</head>
+<body class="bg-dark-bg text-neutral-text">
+
+    <!-- 1. Fixed Header (Dark Theme) -->
+    <header class="fixed top-0 left-0 w-full bg-dark-bg bg-opacity-90 backdrop-blur-sm shadow-lg shadow-gray-900 z-50 flex items-center px-[2%] border-b border-gray-700/50">
+        <div class="flex items-center space-x-3 py-3">
+            <!-- Brand -->
+            <img src="https://placehold.co/40x40/4B5563/FFFFFF?text=CIIT" alt="CIIT Logo" class="rounded-lg shadow-sm">
+            <div class="brand font-extrabold text-lg text-white uppercase tracking-wider">
+                CIIT College of Arts and Technology
+            </div>
+        </div>
+        
+        <!-- Nav Links: Extended 7-item navigation -->
+        <nav class="hidden lg:flex flex-1 justify-center">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition uppercase">HOME</a></li>
+                <li><a href="biography.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition uppercase">BIO</a></li>
+                <li><a href="interests.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition uppercase">INTERESTS</a></li>
+                <li><a href="hobbies.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition uppercase">HOBBIES</a></li>
+                <li><a href="goals.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition uppercase">GOALS</a></li>
+                <li><a href="projects.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition uppercase">PROJECTS</a></li>
+                <!-- CONTACT is active -->
+                <li><a href="contact.html" class="nav-link text-white p-2 border-b-2 border-accent-line font-extrabold uppercase">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu Icon (Visible on small screens) -->
+        <div class="lg:hidden text-2xl text-white ml-auto">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container max-w-[92%] mx-auto px-[4%] pt-[12vh] pb-[6vh]">
+        
+        <section id="contact-hero" class="py-16 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 uppercase tracking-tight">
+                Get In Touch
+            </h1>
+            <p class="text-lg md:text-xl text-neutral-text/80 max-w-2xl mx-auto mb-12">
+                Whether you have a project idea, a job inquiry, or just want to connect about game development, I'd love to hear from you.
+            </p>
+        </section>
+
+        <section id="contact-form-and-info" class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+            <!-- 1. Contact Form (Larger Column) -->
+            <div class="lg:col-span-2 p-8 bg-dark-card rounded-xl shadow-2xl border border-gray-700/50">
+                <h2 class="text-3xl font-bold text-white mb-6 border-b border-gray-600 pb-3">Send a Message</h2>
+                
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-neutral-text mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Joshua L. Villaruel" class="form-input w-full p-3 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-neutral-text mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com" class="form-input w-full p-3 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-neutral-text mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Inquiry about collaboration or project" class="form-input w-full p-3 rounded-lg">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-neutral-text mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me more about your idea..." class="form-input w-full p-3 rounded-lg"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 bg-accent-color-1 text-white font-extrabold rounded-lg hover:bg-blue-600 transition uppercase tracking-widest shadow-lg">
+                        Submit Inquiry <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- 2. Direct Info & Social Links (Smaller Column) -->
+            <div class="lg:col-span-1 space-y-8">
+                
+                <!-- Direct Info Card -->
+                <div class="p-8 bg-dark-card rounded-xl shadow-2xl border border-gray-700/50">
+                    <h2 class="text-3xl font-bold text-white mb-6 border-b border-gray-600 pb-3">Direct Info</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-accent-color-1 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-white">Email</h4>
+                                <p class="text-sm text-neutral-text/80">joshua.villaruel@ciit.edu.ph</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-accent-color-1 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-white">Location</h4>
+                                <p class="text-sm text-neutral-text/80">Manila, Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Card -->
+                <div class="p-8 bg-dark-card rounded-xl shadow-2xl border border-gray-700/50">
+                    <h2 class="text-3xl font-bold text-white mb-6 border-b border-gray-600 pb-3">Connect Online</h2>
+                    <div class="flex justify-around space-x-4">
+                        
+                        <!-- Discord -->
+                        <a href="https://discordapp.com/users/867107432160034846" target="_blank" class="text-gray-400 hover:text-blue-500 social-icon discord">
+                            <i class="fab fa-discord text-4xl"></i>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/Phantomdotexe" target="_blank" class="text-gray-400 hover:text-white social-icon github">
+                            <i class="fab fa-github text-4xl"></i>
+                        </a>
+                        
+                        <!-- Steam -->
+                        <a href="https://steamcommunity.com/id/mechagears/" target="_blank" class="text-gray-400 hover:text-gray-800 social-icon steam">
+                            <i class="fab fa-steam text-4xl"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/josh_villaruel/" target="_blank" class="text-gray-400 hover:text-pink-500 social-icon instagram">
+                            <i class="fab fa-instagram text-4xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div class="mt-16 text-center flex justify-center space-x-8">
+            <a href="projects.html" class="inline-block px-8 py-3 bg-white text-dark-bg font-extrabold rounded-lg hover:bg-gray-200 transition uppercase tracking-widest shadow-lg">
+                <i class="fas fa-arrow-left mr-3"></i> PREV: PROJECTS
+            </a>
+            <a href="index.html" class="inline-block px-8 py-3 bg-accent-color-1 text-white font-extrabold rounded-lg hover:bg-blue-600 transition uppercase tracking-widest shadow-lg">
+                BACK TO HOME <i class="fas fa-home ml-3"></i>
+            </a>
+        </div>
+
+    </main>
+
+</body>
+</html>
