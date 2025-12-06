@@ -21,12 +21,9 @@
             }
         }
     </script>
-    <!-- Load External CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Load Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Ensures the whole background is dark */
         body {
             background-color: #181818; 
             color: #D4D4D4;
@@ -39,23 +36,20 @@
 </head>
 <body class="bg-dark-bg text-neutral-text">
 
-    <!-- 1. Fixed Header (Dark Theme) -->
     <header class="fixed top-0 left-0 w-full bg-dark-bg bg-opacity-90 backdrop-blur-sm shadow-lg shadow-gray-900 z-50 flex items-center px-[2%] border-b border-gray-700/50">
         <div class="flex items-center space-x-3 py-3">
-            <!-- Placeholder for CIIT College Logo (40x40) -->
             <img src="images/ciitlogo.png" class="rounded-lg shadow-sm logo-fixed-size">
             <div class="brand font-extrabold text-lg text-white uppercase tracking-wider">
                 CIIT College of Arts and Technology
             </div>
         </div>
         
-        <!-- Nav Links: Extended 7-item navigation -->
         <nav class="hidden lg:flex flex-1 justify-center">
             <ul class="flex space-x-4">
                 <li><a href="index.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">HOME</a></li>
                 <li><a href="biography.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">BIO</a></li>
                 <li><a href="interests.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">INTERESTS</a></li>
-                <!-- Active Link Style Change -->
+
                 <li><a href="hobbies.html" class="nav-link text-white p-2 border-b-2 border-accent-line font-extrabold uppercase">HOBBIES</a></li>
                 <li><a href="goals.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">GOALS</a></li>
                 <li><a href="projects.html" class="nav-link text-gray-400 p-2 rounded-lg hover:text-white transition">PROJECTS</a></li>
@@ -63,27 +57,23 @@
             </ul>
         </nav>
 
-        <!-- Menu Icon (Visible on small screens) -->
         <div class="lg:hidden text-2xl text-white ml-auto">
             <i class="fas fa-bars"></i>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="container max-w-[92%] mx-auto px-[4%] pt-[12vh] pb-[6vh]">
         
         <h1 class="text-6xl font-extrabold text-white mb-16 border-b border-accent-line/50 pb-4 uppercase tracking-widest">
             MY HOBBIES
         </h1>
 
-        <!-- Hobbies Section -->
         <section id="hobbies-sections" class="mb-12 p-8 bg-dark-card rounded-xl shadow-2xl shadow-gray-950/70 border border-gray-700/50 space-y-16">
             
             <h2 class="text-3xl font-black text-white uppercase tracking-wider border-l-4 border-accent-line pl-4 mb-10 flex items-center">
                 <i class="fas fa-archive mr-3 text-gray-400"></i> Pursuits and Passions
             </h2>
             
-            <!-- Hobby Section 1: Archive Aesthetic Identity -->
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-6 bg-gray-700/30 rounded-xl border-l-4 border-white/50 shadow-inner">
                 <div class="lg:col-span-3 space-y-3">
                     <h3 class="text-3xl font-bold text-white flex items-center mb-2"><i class="fas fa-layer-group mr-3"></i> Archive Aesthetic Identity</h3>
@@ -92,7 +82,6 @@
                     </p>
                 </div>
                 <div class="lg:col-span-2 flex items-center justify-center">
-                    <!-- Image Placeholder (4:3 Aspect Ratio) -->
                     <img 
                         src="images/rickowensfashion.png" 
                         alt="Placeholder for archive aesthetic" 
@@ -101,10 +90,8 @@
                 </div>
             </div>
 
-            <!-- Hobby Section 2: Tinkering and Thrift Finds -->
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-6 bg-gray-700/30 rounded-xl border-l-4 border-white/50 shadow-inner">
                 <div class="lg:col-span-2 flex items-center justify-center order-2 lg:order-1">
-                    <!-- Image Placeholder (4:3 Aspect Ratio) -->
                     <img 
                         src="images/thriftingphilippines.png" 
                         alt="Placeholder for tinkering" 
@@ -119,7 +106,6 @@
                 </div>
             </div>
             
-            <!-- Hobby Section 3: Space for Friends and Gaming -->
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-6 bg-gray-700/30 rounded-xl border-l-4 border-white/50 shadow-inner">
                 <div class="lg:col-span-3 space-y-3">
                     <h3 class="text-3xl font-bold text-white flex items-center mb-2"><i class="fas fa-gamepad mr-3"></i> Space for Friends and Gaming</h3>
@@ -128,7 +114,6 @@
                     </p>
                 </div>
                 <div class="lg:col-span-2 flex items-center justify-center">
-                    <!-- Image Placeholder (4:3 Aspect Ratio) -->
                     <img 
                         src="images/friendscollaborators.png" 
                         alt="Placeholder for gaming" 
@@ -142,7 +127,6 @@
             </p>
         </section>
 
-        <!-- Navigation Buttons -->
         <div class="mt-16 text-center flex justify-center space-x-8">
             <a href="interests.html" class="inline-block px-8 py-3 border border-white text-white font-semibold rounded-lg hover:bg-gray-700 transition uppercase tracking-widest">
                 <i class="fas fa-arrow-left mr-3"></i> PREVIOUS: INTERESTS
