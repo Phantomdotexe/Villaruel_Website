@@ -1,0 +1,150 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #181818;
+    color: #D4D4D4;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #181818;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #3b82f6;
+    border: 2px solid #181818;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #262626;
+}
+
+.logo-fixed-size {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-link {
+    transition: all 0.2s ease-in-out;
+}
+
+.animate-on-load {
+    opacity: 0;
+}
+
+.competency-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.competency-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.biography-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.biography-card:hover {
+    transform: scale(1.005);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.interest-card, .hobby-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.interest-card:hover, .hobby-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: #373737;
+}
+
+.project-card {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2), 0 4px 6px -2px rgba(59, 130, 246, 0.1);
+}
+
+.tag {
+    background-color: #44403c;
+    color: #f5f5f4;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #4b5563;
+}
+
+.timeline-item:last-child::before {
+    height: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #10b981;
+    border: 4px solid #181818;
+    z-index: 10;
+}
+
+.input-style, .contact-input {
+    background-color: #373737;
+    border: 1px solid #4a4a4a;
+    color: #D4D4D4;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.input-style:focus, .contact-input:focus {
+    outline: none;
+    border-color: #F59E0B;
+    box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.3);
+}
+
+.social-icon {
+    transition: transform 0.2s, color 0.2s;
+}
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon.github:hover { color: #ffffff; }
+.social-icon.discord:hover { color: #5865F2; }
+.social-icon.steam:hover { color: #171a21; background-color: #c5c3c0; border-radius: 50%; }
+.social-icon.instagram:hover { color: #E1306C; }
+
+.abstract-blob-1 {
+    border-radius: 40% 60% 70% 30% / 30% 70% 50% 50%;
+    background-color: rgba(63, 63, 70, 0.4); 
+    transform: rotate(0deg);
+}
+
+.abstract-blob-2 {
+    border-radius: 50% 50% 60% 40% / 50% 50% 40% 60%;
+    background-color: rgba(30, 64, 175, 0.3); 
+    transform: rotate(-12deg);
+}
+
+.dot-pattern {
+    background-image: radial-gradient(#ffffff 20%, transparent 20%);
+    background-size: 16px 16px; 
+    opacity: 0.25;
+}
